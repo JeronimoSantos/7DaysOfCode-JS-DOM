@@ -12,19 +12,22 @@
             <h1>Cadastro de Poderes</h1>
         </section>
 
-        <form class="form-js-form">
-            <label for="poderes">
-                Poderes:
-                <input id="" type="text" placeholder=""/>
-            </label>
+        <fieldset>
+            <legend>Poderes de Dragon Ball Z Daima</legend>
+                <form class="form-js-form">
+                    <label for="poderes">
+                        Poderes:
+                        <input id="input-poderes" type="text" placeholder="Digite seu Poder" required/>
+                    </label>
 
-            <label for="nivel-poder">
-                Nível de Poder:
-                <input id="" type="date" placeholder=""/>
-            </label>
-            
-            <button type="submit">Enviar</button>
-        </form>
+                    <label for="nivel-poder">
+                        Nível de Poder:
+                        <input id="input-nivel" type="date" required/>
+                    </label>
+
+                    <button type="submit" onclick="poderesZ()" >Enviar</button>
+                </form>
+        </fieldset>
     </main>
 
     <script src="script.js"></script>
