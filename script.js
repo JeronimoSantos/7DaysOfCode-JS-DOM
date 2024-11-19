@@ -1,11 +1,16 @@
 const inputPoder = document.getElementById("input-poderes");
 const inputNivel = document.getElementById("input-nivel");
+const formulario = document.querySelector("form");
+const button = document.getElementById("button-submit");
 
-function poderesZ () {
+function formSubmit () {
+    formulario.addEventListener('submit', function(evevt) {
+        evevt.preventDefault();
 
-    inputPoder.addEventListener("click", modifyText, false)
-    console.log(inputPoder.value);
-    console.log(inputNivel.value);
+        console.log(inputPoder.value);
+        console.log(inputNivel.value);
+
+    })
 }
 
-poderesZ()
+formSubmit()
